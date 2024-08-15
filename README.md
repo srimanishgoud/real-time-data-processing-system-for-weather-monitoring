@@ -18,18 +18,19 @@ After downloading or cloning the repository navigate to the project folder. Afte
 ## Details about the App
 1. I have utilized streamlit to build the UI.
 2. We can access `Weather data`, `Daily Weather Summaries`, and `Alert` details using the side panel in the application through navigating.
-3. `Weather Data`/`Know the Weather`: This page gives the weather conditions at that time upon selecting the city and the temperature units. 
+3. Here we are running background_data_fetch: to fetch the data continuously through API, check_alerts:to check for the alerts, continuously irrespective of the user interaction with the application using different processes for those functions.
+4. `Weather Data`/`Know the Weather`: This page gives the weather conditions at that time upon selecting the city and the temperature units. 
 > It displays city, weather type, temperature, Feels Like tempertaure, Humidity, wind speed, and Unix timespamp of the data.
-4.  `Display daily summary`: Upon selecting the city, temperature units and the time frame of which the data should be displayed, the data is then projected and also the graphical representation of the data is also displayed below it.
+5.  `Display daily summary`: Upon selecting the city, temperature units and the time frame of which the data should be displayed, the data is then projected and also the graphical representation of the data is also displayed below it.
 > It displays date, Average temperatire, Maximum temperature, Minimum temperature, Dominant Weather Condition of the day, Average Humidity and Average Wind speed. I chose to not display max and min humidity and wind speed of the day because its not that important to display that data also it might get clumsy in the app UI anyway when we can get an idea of it from its average value.
 > Q: `Dominant Weather Condition` \
 > Ans: Dominant weather condition for the day is the weather condition that is observed most number of time in that particular day.
-5. `Alerts`: Alerts page contains all the functionalities that a user can use to manage alerts based on weather conditions. 
+6. `Alerts`: Alerts page contains all the functionalities that a user can use to manage alerts based on weather conditions. 
 > `Set Alerts` is used to create a new alert. \
 > `All Alerts` displays all the active alerts. \
 > `Delete Alerts` is used to delete a particular alert using its data. \
 > `Past Triggered Alerts` displays all the previously triggered alerts. It displays the date, time and the alert message of when it was triggered.
-6. `Database and its collections`: MondoDB database
+7. `Database and its collections`: MondoDB database
 > myWeatherDatabase - database name \
 > alerts - to store the all the alerts set by the user \
 > alerts_store - to store the triggered alerts \
