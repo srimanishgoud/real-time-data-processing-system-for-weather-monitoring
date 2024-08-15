@@ -30,6 +30,7 @@ After downloading or cloning the repository navigate to the project folder. Afte
 > `Delete Alerts` is used to delete a particular alert using its data. \
 > `Past Triggered Alerts` displays all the previously triggered alerts. It displays the date, time and the alert message of when it was triggered.
 6. `Database and its collections`: MondoDB database
+> myWeatherDatabase - database name \
 > alerts - to store the all the alerts set by the user \
 > alerts_store - to store the triggered alerts \
 > daily_summaries_city - daily summaries of the respective city \
