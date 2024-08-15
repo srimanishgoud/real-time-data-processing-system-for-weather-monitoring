@@ -1,0 +1,6 @@
+pandas
+flask
+requests
+flask_pymongo
+streamlit
+matplotlib
