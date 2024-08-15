@@ -13,7 +13,8 @@ After downloading or cloning the repository navigate to the project folder. Afte
 > Make sure to replace the API_KEY variable with your own api key from OpenWeatherMap API.
 > I am using MongoDB database, we can have a look into to the data using MongoDB Compass.
 > We can download MongoDB community server from https://www.mongodb.com/try/download/community.
-5. Run the app using `streamlit run app.py`\
+5. Run the app using `streamlit run app.py`
+6. If in case, the app after opening in the browser shows some error, then simply reload the page again. Its just because of some module dependency. I myself didn't encounter it much.
 
 ## Details about the App
 1. I have utilized streamlit to build the UI.
@@ -25,7 +26,8 @@ After downloading or cloning the repository navigate to the project folder. Afte
 > It displays date, Average temperatire, Maximum temperature, Minimum temperature, Dominant Weather Condition of the day, Average Humidity and Average Wind speed. I chose to not display max and min humidity and wind speed of the day because its not that important to display that data also it might get clumsy in the app UI anyway when we can get an idea of it from its average value.
 > Q: `Dominant Weather Condition` \
 > Ans: Dominant weather condition for the day is the weather condition that is observed most number of time in that particular day.
-6. `Alerts`: Alerts page contains all the functionalities that a user can use to manage alerts based on weather conditions. 
+6. `Alerts`: Alerts page contains all the functionalities that a user can use to manage alerts based on weather conditions. \
+**_Note_** `The alerts will be displayed in the console`
 > `Set Alerts` is used to create a new alert. \
 > `All Alerts` displays all the active alerts. \
 > `Delete Alerts` is used to delete a particular alert using its data. \
@@ -45,3 +47,6 @@ After downloading or cloning the repository navigate to the project folder. Afte
 
 ### Generating sample data
 We can generate the sample data to fill the database, just to test the app, by simply setting the sleep time to 5 seconds and filling the daily summary for each city after 3 rounds of 5 sec. For clarity visit the data.py file and look at the commented code in background_data_fetch function. This data is not the actual representation of what actual data might look like but its keeps us get started.
+
+### Bonus
+I have implemented the system to support other weather parameters like humidity and wind speed, and also calculated rollups and aggregates for these parameters.
